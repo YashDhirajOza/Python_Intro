@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Tutorial for Beginners</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f2f5;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .chapter {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #e0e0e0;
+            border-radius: 5px;
+        }
+        .chapter:hover {
+            background-color: #f8f9fa;
+        }
+        .chapter-title {
+            color: #2980b9;
+            margin: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .timestamp {
+            color: #7f8c8d;
+            font-size: 0.9em;
+        }
+        .checkbox {
+            margin-right: 10px;
+        }
+        .progress-bar {
+            background-color: #ecf0f1;
+            height: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            overflow: hidden;
+        }
+        .progress {
+            width: 0%;
+            height: 100%;
+            background-color: #3498db;
+            transition: width 0.3s ease;
+        }
+        .project {
+            background-color: #e8f4f8;
+        }
+        .mega-project {
+            background-color: #e8f0ff;
+        }
+        video-container {
+            position: relative;
+            width: 100%;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        
+        .video-container iframe {
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="video-container">
+            <iframe 
+                width="100%" 
+                height="450" 
+                src="https://www.youtube.com/embed/UrsmFxEIp5k?si=S-YN93Q45ldzprdg" 
+                title="Python Tutorial for Beginners" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" 
+                allowfullscreen>
+            </iframe>
+        </div>
+    <div class="container">
+        <h1>🐍 Python Tutorial for Beginners</h1>
+        
+        <div class="progress-bar">
+            <div class="progress" id="progress"></div>
+        </div>
+
+        <div class="chapter">
+            <div class="chapter-title">
+                <input type="checkbox" class="checkbox" onclick="updateProgress()">
+                <span>Introduction</span>
+                <span class="timestamp">00:00:00</span>
+            </div>
+        </div>
+
+        <div class="chapter">
+            <div class="chapter-title">
+                <input type="checkbox" class="checkbox" onclick="updateProgress()">
+                <span>Chapter 0: What is Programming?</span>
+                <span class="timestamp">00:02:05</span>
+            </div>
+        </div>
+
+        <div class="chapter">
+            <div class="chapter-title">
+                <input type="checkbox" class="checkbox" onclick="updateProgress()">
+                <span>Chapter 1: Modules, Comments & pip + Practice Set</span>
+                <span class="timestamp">00:09:41</span>
+            </div>
+        </div>
+
+        <div class="chapter">
+            <div class="chapter-title">
+                <input type="checkbox" class="checkbox" onclick="updateProgress()">
+                <span>Chapter 2: Variables and Datatype + Practice Set</span>
+                <span class="timestamp">00:34:55</span>
+            </div>
+        </div>
+
+        <div class="chapter">
+            <div class="chapter-title">
+                <input type="checkbox" class="checkbox" onclick="updateProgress()">
+                <span>Chapter 3: Strings + Practice Set</span>
+                <span class="timestamp">01:15:57</span>
+            </div>
+        </div>
+
+        <div class="chapter">
+            <div class="chapter-title">
+                <input type="checkbox" class="checkbox" onclick="updateProgress()">
+                <span>Chapter 4: Lists and Tuples + Practice Set</span>
+                <span class="timestamp">01:50:53</span>
+            </div>
+        </div>
+
+        <div class="chapter">
+            <div class="chapter-title">
+                <input type="checkbox" class="checkbox" onclick="updateProgress()">
+                <span>Chapter 5: Dictionary & Sets + Practice Set</span>
+                <span class="timestamp">02:25:56</span>
+            </div>
+        </div>
+
+        <div class="chapter">
+            <div class="chapter-title">
+                <input type="checkbox" class="checkbox" onclick="updateProgress()">
+                <span>Chapter 6: Conditional Expression + Practice Set</span>
+                <span class="timestamp">03:09:41</span>
+            </div>
+        </div>
+
+        <div class="chapter">
+            <div class="chapter-title">
+                <input type="checkbox" class="checkbox" onclick="updateProgress()">
+                <span>Chapter 7: Loops in Python + Practice Set</span>
+                <span class="timestamp">03:58:17</span>
+            </div>
+        </div>
+
+        <div class="chapter">
+            <div class="chapter-title">
+                <input type="checkbox" class="checkbox" onclick="updateProgress()">
+                <span>Chapter 8: Functions & Recursions + Practice Set</span>
+                <span class="timestamp">04:50:53</span>
+            </div>
+        </div>
+
+        <div class="chapter project">
+            <div class="chapter-title">
+                <input type="checkbox" class="checkbox" onclick="updateProgress()">
+                <span>🎮 Project 1: Snake, Water, Gun Game</span>
+                <span class="timestamp">05:34:55</span>
+            </div>
+        </div>
+
+        <div class="chapter">
+            <div class="chapter-title">
+                <input type="checkbox" class="checkbox" onclick="updateProgress()">
+                <span>Chapter 9: File I/O + Practice Set</span>
+                <span class="timestamp">05:54:50</span>
+            </div>
+        </div>
+
+        <div class="chapter">
+            <div class="chapter-title">
+                <input type="checkbox" class="checkbox" onclick="updateProgress()">
+                <span>Chapter 10: Object Oriented Programming + Practice Set</span>
+                <span class="timestamp">06:42:22</span>
+            </div>
+        </div>
+
+        <div class="chapter">
+            <div class="chapter-title">
+                <input type="checkbox" class="checkbox" onclick="updateProgress()">
+                <span>Chapter 11: Inheritance & more on OOPs + Practice Set</span>
+                <span class="timestamp">07:23:17</span>
+            </div>
+        </div>
+
+        <div class="chapter project">
+            <div class="chapter-title">
+                <input type="checkbox" class="checkbox" onclick="updateProgress()">
+                <span>🎮 Project 2: The Perfect Guess</span>
+                <span class="timestamp">08:08:45</span>
+            </div>
+        </div>
+
+        <div class="chapter">
+            <div class="chapter-title">
+                <input type="checkbox" class="checkbox" onclick="updateProgress()">
+                <span>Chapter 12: Advanced Python 1 + Practice Set</span>
+                <span class="timestamp">08:15:38</span>
+            </div>
+        </div>
+
+        <div class="chapter">
+            <div class="chapter-title">
+                <input type="checkbox" class="checkbox" onclick="updateProgress()">
+                <span>Chapter 13: Advanced Python 2 + Practice Set</span>
+                <span class="timestamp">08:57:51</span>
+            </div>
+        </div>
+
+        <div class="chapter mega-project">
+            <div class="chapter-title">
+                <input type="checkbox" class="checkbox" onclick="updateProgress()">
+                <span>🚀 Mega Project 1: Jarvis</span>
+                <span class="timestamp">09:30:22</span>
+            </div>
+        </div>
+
+        <div class="chapter mega-project">
+            <div class="chapter-title">
+                <input type="checkbox" class="checkbox" onclick="updateProgress()">
+                <span>🚀 Mega Project 2: Auto Reply AI Chatbot</span>
+                <span class="timestamp">10:17:56</span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function updateProgress() {
+            const checkboxes = document.querySelectorAll('.checkbox');
+            const total = checkboxes.length;
+            let checked = 0;
+            
+            checkboxes.forEach(checkbox => {
+                if (checkbox.checked) checked++;
+            });
+            
+            const progressPercent = (checked / total) * 100;
+            document.getElementById('progress').style.width = progressPercent + '%';
+        }
+    </script>
+</body>
+</html>
